@@ -1,0 +1,155 @@
+body
+{
+    font-family: monospace;
+    background: url('space.png');
+    background-repeat: no-repeat; 
+    background-size:100% 100%;
+    background-attachment: fixed;
+    width:100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    max-height: 800px;
+    position: fixed;
+}
+#intro1
+{
+    text-align: center;
+    font-size: 45pt;
+    color:white;
+    font-family:monospace;
+    /* position: relative; */
+    
+    animation: fadein 5s;
+    
+        
+}
+@keyframes fadein {
+    from { opacity: 0;}
+    to{opacity: 1;}
+    
+}
+.image_container
+{
+    background-color:aliceblue;
+    width:400px;
+    height: 300px;
+    position: relative;
+    left:100px;
+    top:20px;
+    border-radius: 15px;
+    opacity: 1;
+    
+}
+.processed_text_div
+{
+    background-color: aliceblue;
+    border-style: solid;
+    width:400px;
+    height: 500px;
+    position: relative;
+    left:920px;
+    top:-400px;
+    border-radius: 15px;
+    opacity: 0.9;
+    text-align: center;
+
+}
+#import
+{
+    border-radius: 15px;
+    width:200px;
+    position:relative;
+    top:0px;
+    left:200px;
+    height:50px;
+    background-color: #1b1919;
+    border:black;
+    color:aliceblue;
+    font-size: 20pt;
+    animation: fadein 2s;
+}
+#import:hover
+{
+    background-color: #3f3a3a;
+    color:white;
+    cursor: pointer;
+}
+#processed_text
+{
+    width:380px;
+    height:350px;
+    padding:5pt;
+    margin-left: 1pt;
+
+}
+#convert
+{
+    position: relative;
+    left:450px;
+    top:-200px;
+    color: aliceblue;
+    
+}
+#convert1
+{
+    color:aliceblue;
+    position: relative;
+    left:670px;
+    top:-235px;
+}
+.begin_button
+{
+    border-radius: 15px;
+    width:200px;
+    position:relative;
+    height:50px;
+    background-color: #1b1919;
+    border:black;
+    color:aliceblue;
+    font-size: 16pt;
+    animation: fadein 2s;    
+}
+.begin_button:hover
+{
+    background-color: #3f3a3a;
+    color:white;
+    cursor: pointer;
+}
+#nav_buttons
+{
+    /* background-color: green; */
+    position: relative;
+    left:550px;
+    width:300px;
+    height:100px;
+    top:-680px;
+    font-size: 60pt;
+    color:aliceblue;
+    cursor: pointer;
+    opacity: 0.8;
+  
+}
+#nav_buttons:hover
+{
+    color:white;
+    opacity: 1;
+}
+#audio_path
+{
+    position: relative;
+    left:50px;
+    top:-90px;
+    opacity: 0.9;
+}
+.video_container
+{
+   
+    width:500px;
+    height: 350px;
+    position: relative;
+    left:30px;
+    top:20px;
+    border-radius: 15px;
+    opacity: 1;
+    
+}

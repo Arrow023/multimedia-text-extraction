@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Video Processing System</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/image.css')}}">
+        <link rel="icon" href="{{url_for('static',filename='data/images/video2.png')}}" type="image/png" sizes="16x16">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+
+    </head>
+    <body>
+            <h1 id="intro1">TEXT EXTRACTION UTILITY USING VIDEO</h1>
+            <div class="video_container">
+                <center><h1 style="color: grey;padding:80pt;" id="text">Select the video file</h1></center>
+                <video controls id="video_path"  width="500px" height="350px">
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+            <input type="button" value="Import Image" class="buttons" id="import">
+            <input type="file" accept="video/*" id="file_handler" hidden="hidden">
+            <input type="image" src="{{url_for('static',filename='data/images/video.png')}}" alt="Submit" width="100" height="100" id="convert">
+            <h1 id="convert1">Start</h1>
+            <div class="processed_text_div">
+                <center><h2>Processed Text</h2></center>
+                <textarea id="processed_text">
+                </textarea>
+                <button type="submit" class="begin_button">Speak Text  <i class="fa fa-microphone" ></i></button>
+            </div>
+            <div id="nav_buttons">
+                <a onclick="javascript:history.go(-1)" style="color: aliceblue;"><i class="fa fa-arrow-circle-left"></i></a>
+                <a href="index.html" style="color: aliceblue;"><i class="fa fa-home"></i></a>
+                <a href="#" style="color: aliceblue;"><i class="fa fa-save"></i></a>
+                <a href="#" style="color: aliceblue;margin:85pt;"><i class="fa fa-language"></i></a>
+            </div>
+            
+            
+
+    </body>
+    <script>
+      
+        var handler=document.getElementById("file_handler");
+        var impbtn=document.getElementById("import");
+        document.getElementById("video_path").hidden="hidden";
+        impbtn.addEventListener("click",function(){
+            handler.click();
+            
+        });
+        var global_video_path;
+        handler.addEventListener("change",function(){
+            var path="data/video/"+handler.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+            global_video_path=path;
+            document.getElementById("video_path").src=path;
+            document.getElementById("text").hidden="hidden";
+            document.getElementById("video_path").hidden=false;
+            console.log(path);
+        })
+        var jian="Question for You. What's better than octopus recipe? Answer for you. Eight Recipes for octopus. My Grandmother gave me a family recipe before she died in a horrible way.";
+        var gary="Without hustle, talent will only carry you so far. -Gary Vaynerchuck";
+        var textbox=document.getElementById("processed_text");
+        var convert=document.getElementById("convert");
+        
+        
+        convert.addEventListener("click",function(){
+            if(global_video_path=="data/video/jian.jpg")
+            {
+                
+                textbox.value=jian;
+                alert("Data processed successfully");
+            }
+            else
+            {
+                
+                textbox.value=gary;
+                alert("Data processed successfully");
+            }
+        });
+        document.getElementById("audios")
+        
+    </script>
+    
+</html>

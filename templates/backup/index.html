@@ -1,0 +1,83 @@
+
+<html>
+
+    <head>
+
+        <title>Multimedia Text Extraction</title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <link rel="stylesheet" type="text/css" href="blink.css">
+        <link rel="icon" href="main2.png" type="image/png" sizes="16x16">
+        <script>
+            function image_page()
+            {
+                document.location.href="image.html";
+            }
+            function audio_page()
+            {
+                document.location.href="audio.html";
+            }
+            function video_page()
+            {
+                document.location.href="video.html";
+            }
+        </script>
+
+       
+    </head>
+    <body>
+        <h1 id="intro" >MULTIMEDIA TEXT EXTRACTION TOOLKIT </h1>
+        <div id="first">
+            <video width="500" height="350" controls loop>
+                <source src="siraj.mp4" type="video/mp4">   
+                    Your browser doesn't support video
+            </video>
+            
+           
+        </div>
+        <div id="first_aside">
+            <h1>Convert Video at Ease.</h1>
+            <h3>With our utility, access the fastest and accurate method to extract text from any video source.</h3>
+            <p style="font-size: 15;">We humans, come across many multimedia elements in our day to day life.
+            When we have any trouble, we opt for YouTube. We come across many YouTube videos and sometimes we couldn't find what we need.
+            Our application is capable of extracting text from the video elements. This feature enables the search engine to use the extracted
+            text to enhance the search algorithm that gives the accurate results.   </p>
+            <button class="begin_button" onclick="video_page()">Convert Video</button> 
+        </div>
+       <h1 class="typer">Let's Begin. Extract your way.</h1>
+       <div id="second">
+            <h1>Convert Audio at Ease.</h1>
+            <h3>Get the best from audio using our SpeechRecognition Module.</h3>
+            <p style="font-size: 15;">
+                Voice is the most important function of our body. Inorder to communicate, we need speech.
+                We have created a SpeechRecognition module that helps you to convert the audio into the text and
+                process the information from the extracted text. 
+            </p>
+            <button class="begin_button" onclick="audio_page()">Convert Audio</button> 
+       </div>
+       <div id="second_aside">
+           <img src="audio.gif" height=250px style="border-radius: 20px;"/>
+       </div>   
+       <div id="third">
+        <img src="gary.png" width="450px" />
+       </div> 
+       <div id="third_aside">
+            <h1>Convert Image at Ease.</h1>
+            <h3>Morph the pixels and get the best out of it.</h3>
+            <p style="font-size: 15;">
+                In our routine, we come across many images. We share with our closed once. But the information inside it is valuable. 
+                Our utiliy can perform pixel level operation and extract the text behind it. It's who we are. 
+            </p>
+            <input type="button" class="begin_button" value="Convert Image" onclick="image_page()"/> 
+       </div>
+       <div id="footer">
+          <center>
+            <h2 id="info">This site is created by M Piyush Chouhan</h2>
+            <h3>Team Name: Velocity_6 Batch Number: 11</h3>
+            <li >M. Piyush Chouhan (211417104183/2017PECCS323)</li>
+            <li>Rajeshkumar K (211417104213/2017PECCS340)</li>
+            <p>© All rights reserved </p>
+          </center> 
+          <img id="panimalar" src="panimalar.jpg" width="200px" height="200px">
+       </div>
+    </body>
+</html>
